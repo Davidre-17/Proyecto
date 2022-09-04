@@ -87,10 +87,7 @@ img {
 
 .header {
     background-color: var(--principalOscuro);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    height: 40rem;
+    height: 45rem;
 }
 
 @media (min-width: 768px) {
@@ -135,4 +132,26 @@ img {
 .navegacion__enlace:hover {
     font-weight: 700;
     transform: scale(1.1);
+}
+
+@media (min-width: 768px) {
+    .header__texto h1 {
+        font-size: 10rem;
+    }
+    .header__texto p {
+        font-size: 2rem;
+    }
+}
+
+.header__texto {
+    text-align: center;
+}
+
+
+/*Footer*/
+
+.footer {
+    background-color: var(--principalOscuro);
+    padding-bottom: 4rem;
+    margin-top: 4rem;
 }
