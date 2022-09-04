@@ -1,38 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Bodega Yasumi</title>
 </head>
-    <body class="blue">
-        <header>
-        <menu>Productos</menu>
-        </header>
-        <main class="  z-depth-2">
+
+<body>
+    <header class="header">
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <h1 class="logo__nombre no-margin centrar-texto">B<span class="logo__bold">Y</span></h1>
+                </a>
+                <nav class="navegacion">
+                    <a class="navegacion__enlace" href="productos.html">Productos</a>
+                    <a class="navegacion__enlace" href="">Nosotros</a>
+                    <a class="navegacion__enlace" href="">Contacto</a>
+                </nav>
+            </div>
+            <div class="header__texto">
+                <h1 class="no-margin">Bodega Yasumi</h1>
+                <p class="no-margin">Gran Variedad de Productos</p>
+            </div>
+
+        </div>
+    </header>
+    <main class="  z-depth-2">
         <div class=" row ">
-        <div class="principal col s6">
-            <a class="btn btn-large">Cargar Productos</a>
+            <div class="principal col s6">
+                <a class="btn btn-large">Cargar Productos</a>
+            </div>
+            <div class="principal col s6 z-depth-3">
+                <ul class="collection">
+                    <a href="#" class="collection-item">Producto1</a>
+                    <a href="#" class="collection-item">Producto2</a>
+                    <a href="#" class="collection-item">Producto3</a>
+                    <a href="#" class="collection-item">Producto4</a>
+                </ul>
+                <ul class="collection">
+                    <li class=" btn teal comprar">Realizar Compra</li>
+                    <li class=" btn red cancelar">cancelar</li>
+                </ul>
+            </div>
         </div>
-        <div class="principal col s6 z-depth-3">
-            <ul class="collection">
-            <a href="#" class="collection-item">Producto1</a>
-            <a href="#" class="collection-item">Producto2</a>
-            <a href="#" class="collection-item">Producto3</a>
-            <a href="#" class="collection-item">Producto4</a>  
-            </ul>
-            <ul class="collection">
-            <li class=" btn teal comprar">Realizar Compra</li>
-            <li class=" btn red cancelar">cancelar</li>
-            </ul>
+    </main>
+    <footer class="footer">
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <h1 class="logo__nombre no-margin centrar-texto">B<span class="logo__bold">Y</span></h1>
+                </a>
+                <nav class="navegacion">
+                    <a class="navegacion__enlace" href="">Productos</a>
+                    <a class="navegacion__enlace" href="">Nosotros</a>
+                    <a class="navegacion__enlace" href="">Contacto</a>
+                </nav>
+            </div>
+
         </div>
-        </div>
-        </main>
-        <footer class="blue darken-4 page-footer">
-        <div class="container">
-            <h5 class="white-text center">datos de Aplicación</h5>
-        </div>
-        </footer>
-    </body>
+    </footer>
+</body>
+
 </html>

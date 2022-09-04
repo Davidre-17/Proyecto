@@ -1,8 +1,8 @@
 :root {
     --blanco: #fff;
     --negro: #000;
-    --principal: rgb(209, 205, 177);
-    --principalOscuro: rgb(174, 166, 130);
+    --principal: rgb(255, 255, 255);
+    --principalOscuro: rgb(188, 163, 107);
     --secundario: rgb(117, 102, 147);
     --secundarioOscuro: rgb(90, 78, 114);
     --fuentePrincipal: 'Open Sans', sans-serif;
@@ -24,7 +24,7 @@ body {
     font-family: var(--fuentePrincipal);
     font-size: 1.6rem;
     line-height: 2;
-    background-color: var(--fuentePrincipal);
+    background-color: var(--principal);
 }
 
 
@@ -87,7 +87,18 @@ img {
 
 .header {
     background-color: var(--principalOscuro);
-    height: 45rem;
+    height: 30rem;
+}
+
+@media (min-width: 768px) {
+    .header {
+        height: 45rem;
+    }
+}
+
+.logo__bold,
+.logo__nombre {
+    color: var(--negro);
 }
 
 @media (min-width: 768px) {
@@ -96,11 +107,10 @@ img {
         justify-content: space-between;
         align-items: center;
     }
-}
-
-.logo__bold,
-.logo__nombre {
-    color: var(--blanco);
+    .logo__bold,
+    .logo__nombre {
+        color: var(--blanco);
+    }
 }
 
 .logo__nombre {
@@ -134,6 +144,11 @@ img {
     transform: scale(1.1);
 }
 
+.header__texto {
+    text-align: center;
+    color: transparent;
+}
+
 @media (min-width: 768px) {
     .header__texto h1 {
         font-size: 10rem;
@@ -141,11 +156,13 @@ img {
     .header__texto p {
         font-size: 2rem;
     }
+    .header__texto {
+        color: var(--negro)
+    }
 }
 
-.header__texto {
-    text-align: center;
-}
+
+/*Probando*/
 
 
 /*Footer*/
