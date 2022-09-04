@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/productStyle.css">
     <title>Bodega Yasumi</title>
 </head>
 
@@ -34,53 +35,59 @@
         </div>
     </header>
     <section class="contenedor">
-        <h2 class="productos__titulo">PRODUCTOS</h2>
-            <div class="grid">
-            
-                <div class="producto">
+        <h2 class="productos__titulo centrar-texto">PRODUCTOS</h2>
+        <div class="grid">
+
+            <div class="producto">
+                <a href="producto_info.html" class="producto__imagen-enlace">
                     <img src="img/aceite.jpg" class="producto__imagen" alt="imagen del producto">
-                    <div class="producto__informacion">
-                        <h3 class="producto__nombre">ACEITE PRIMOR</h3>
-                        <p class="producto__precio">s/ 9.00</p>
-                    </div>
-                    <div class="producto__boton">
-                        <a href="">Añadir al carrito<i class="producto_icono"></i></a>
-                    </div>
+                </a>
+                <h3 class="producto__nombre centrar-texto">aceite primor</h3>
+                <div class="producto__informacion">
+                    <label class="label">Precio: </label>
+                    <p class="producto__precio">s/ 9.00</p>
                 </div>
-
-                <div class="producto">
-                    <img src="img/detergente.jpg" class="producto__imagen" alt="imagen del producto">
-                    <div class="producto__informacion">
-                        <h3 class="producto__nombre">DETERGENTE BOLIVAR</h3>
-                        <p class="producto__precio">s/ 4.50</p>
-                    </div>
-                    <div class="producto__boton">
-                        <a href="">Añadir al carrito<i class="producto_icono"></i></a>
-                    </div>
-                </div>
-
-                <div class="producto">
-                    <img src="img/jabon.jpg" class="producto__imagen" alt="imagen del producto">
-                    <div class="producto__informacion">
-                        <h3 class="producto__nombre">JABON BOLIVAR</h3>
-                        <p class="producto__precio">s/ 1.80</p>
-                    </div>
-                    <div class="producto__boton">
-                        <a href="">Añadir al carrito<i class="producto_icono"></i></a>
-                    </div>
-                </div>
-
-                <div class="producto">
-                    <img src="img/rellenitas.jpg" class="producto__imagen" alt="imagen del producto">
-                    <div class="producto__informacion">
-                        <h3 class="producto__nombre">GALLETA RELLENITAS</h3>
-                        <p class="producto__precio">s/ 0.50</p>
-                    </div>
-                    <div class="producto__boton">
-                        <a href="">Añadir al carrito<i class="producto_icono"></i></a>
-                    </div>
+                <div>
+                    <a class="producto__boton boton" href="">Añadir al carrito<i class="producto_icono"></i></a>
                 </div>
             </div>
+
+            <div class="producto">
+                <img src="img/detergente.jpg" class="producto__imagen" alt="imagen del producto">
+                <h3 class="producto__nombre centrar-texto">detergente bolivar</h3>
+                <div class="producto__informacion">
+                    <label class="label">Precio: </label>
+                    <p class="producto__precio">s/ 4.50</p>
+                </div>
+                <div>
+                    <a class="producto__boton boton" href="">Añadir al carrito<i class="producto_icono"></i></a>
+                </div>
+            </div>
+
+            <div class="producto">
+                <img src="img/jabon.jpg" class="producto__imagen" alt="imagen del producto">
+                <h3 class="producto__nombre centrar-texto">jabon bolivar</h3>
+                <div class="producto__informacion">
+                    <label class="label">Precio: </label>
+                    <p class="producto__precio">s/ 1.80</p>
+                </div>
+                <div>
+                    <a class="producto__boton  boton" href="">Añadir al carrito<i class="producto_icono"></i></a>
+                </div>
+            </div>
+
+            <div class="producto">
+                <img src="img/rellenitas.jpg" class="producto__imagen" alt="imagen del producto">
+                <h3 class="producto__nombre centrar-texto">galleta rellenita</h3>
+                <div class="producto__informacion">
+                    <label class="label">Precio: </label>
+                    <p class="producto__precio">s/ 0.50</p>
+                </div>
+                <div>
+                    <a class="producto__boton boton" href="">Añadir al carrito<i class="producto_icono"></i></a>
+                </div>
+            </div>
+        </div>
     </section>
     <footer class="footer">
         <div class="contenedor">
