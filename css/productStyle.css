@@ -1,0 +1,90 @@
+:root {
+    --blanco: #fff;
+    --negro: #000;
+    --principal: rgb(209, 205, 177);
+    --principalOscuro: rgb(174, 166, 130);
+    --secundario: rgb(117, 102, 147);
+    --secundarioOscuro: rgb(90, 78, 114);
+    --fuentePrincipal: 'Open Sans', sans-serif;
+    --fuenteSecundaria: 'PT Sans', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--fuentePrincipal);
+    font-size: 1.6rem;
+    line-height: 2;
+    background-color: var(--fuentePrincipal);
+}
+
+
+/*Globales*/
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 4.8rem;
+}
+
+h2 {
+    font-size: 4.8rem;
+}
+
+h3 {
+    font-size: 3.2rem;
+}
+
+h4 {
+    font-size: 2.8rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--fuenteSecundaria);
+}
+
+img {
+    max-width: 100%;
+}
+
+.contenedor {
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+/*Utilidades*/
+
+.centrar-texto {
+    text-align: center;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+/*contenido*/
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(5,1fr);
+}
