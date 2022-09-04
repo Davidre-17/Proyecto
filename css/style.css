@@ -21,9 +21,10 @@ html {
 }
 
 body {
-    font-family: var(--fuenteSecundaria);
+    font-family: var(--fuentePrincipal);
     font-size: 1.6rem;
     line-height: 2;
+    background-color: var(--fuentePrincipal);
 }
 
 
@@ -53,7 +54,7 @@ h1,
 h2,
 h3,
 h4 {
-    font-family: var(--fuentePrincipal);
+    font-family: var(--fuenteSecundaria);
 }
 
 img {
@@ -79,4 +80,59 @@ img {
 
 .no-padding {
     padding: 0;
+}
+
+
+/*Header*/
+
+.header {
+    background-color: var(--principalOscuro);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 40rem;
+}
+
+@media (min-width: 768px) {
+    .barra {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.logo__bold,
+.logo__nombre {
+    color: var(--blanco);
+}
+
+.logo__nombre {
+    font-weight: 300;
+}
+
+.logo__bold {
+    font-weight: 700;
+}
+
+.barra {
+    padding-top: 4rem;
+}
+
+@media (min-width: 768px) {
+    .navegacion {
+        display: flex;
+        gap: 2rem;
+    }
+}
+
+.navegacion__enlace {
+    display: block;
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--blanco);
+}
+
+.navegacion__enlace:hover {
+    font-weight: 700;
+    transform: scale(1.1);
 }
