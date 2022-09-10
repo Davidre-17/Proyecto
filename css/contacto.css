@@ -1,0 +1,110 @@
+/* glosbales */
+img{
+    max-width: 100%;
+    display: block;
+}
+/* Contacto HTML */
+.contenedor__contacto{
+    display: grid;
+    text-align: center;
+    margin-top: 1rem;
+    font-family: var(--fuenteSecundaria);
+}
+@media (min-width:768px){
+    body{
+        background: linear-gradient(217deg, #f1fe5f, rgba(255,0,0,0) 70.71%),
+        linear-gradient(127deg, #cdff5f, rgba(0,255,0,0) 70.71%),
+        linear-gradient(336deg, #e7c538, rgba(0,0,255,0) 70.71%);
+    }
+    .contenedor__contacto{
+        grid-template-columns: 2fr 1.5fr;
+        margin: 5rem 13rem 5rem 5em;
+        column-gap: 3rem;  
+    }
+}
+@media (min-width:1200px){
+    .contenedor__contacto{
+        grid-template-columns: 2fr 1.5fr;
+        margin: 5rem 20rem 5rem 20rem;  
+    }
+}
+.campo p{
+    margin-top: 0;
+    padding: 0 1rem 0 1rem;
+}
+fieldset{
+    border: none;
+}
+legend{
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1.7rem;
+    font-weight: bold;
+    text-transform:uppercase;
+    color: #3a1406;
+}
+.alinear__column{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    margin: 0 2rem 0.6rem 2rem;
+}
+.alinear__column label{
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+.alinear__row{
+    display: flex;
+    text-align: start;
+    justify-content: space-between;
+    align-items: center;
+}
+.alinear__row i{
+    font-size: 2.2rem;
+    color: #3a1406;
+}
+.alinear__row input, textarea{
+    width: 90%;
+    padding: 0.8rem;
+    border: 1px solid #e7c538;  
+    color: #e2e2e2;
+}
+
+.alinear__row input:hover{
+    border: 1px solid #3a1406;
+    color: #7a7672;  
+}
+.btn__contacto{
+    margin: 2rem 0 2rem 0;
+    width: 50%;
+    padding: 0.9rem;
+    border: none;
+    border-radius: 0.5rem;
+    transition: 0.5s;
+    background: linear-gradient(217deg, #f1fe5f, rgba(255,0,0,0) 70.71%),
+                linear-gradient(127deg, #cdff5f, rgba(0,255,0,0) 70.71%),
+                linear-gradient(336deg, #e7c538, rgba(0,0,255,0) 70.71%);
+}
+.btn__contacto:hover{
+    background: linear-gradient(to left,#f8efbd, #e7c538);
+    font-size: 1.7rem;
+}
+
+.campo__imagen img{
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+}
+@media (min-width:768px){
+    .campo__imagen{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 1rem;
+    }
+    .campo__imagen img{
+        height: 45rem;
+        object-fit: cover;
+    }
+}
