@@ -1,11 +1,15 @@
 :root {
     --blanco: #fff;
     --negro: #000;
-    --principal: rgb(209, 205, 177);
-    --principalOscuro: rgb(174, 166, 130);
-    --secundario: rgb(117, 102, 147);
-    --secundarioOscuro: rgb(90, 78, 114);
-    --fuentePrincipal: 'Open Sans', sans-serif;
+    --color-principal: #FF3233;
+    --color-principalOscuro: #b02121;
+    --color-secundario: #1f1f1f;
+    --color-header-texto: #c6c7cc;
+    --color-terciario: #2d2e2d;
+    --color-fondo: #fafafa;
+    --color-letra: #626262;
+    --fuentePrincipal: 'Fjalla One', sans-serif;
+    --fuente: 'Open Sans', sans-serif;
     --fuenteSecundaria: 'PT Sans', sans-serif;
 }
 
@@ -83,14 +87,14 @@ img {
 }
 
 .boton {
-    background-color: var(--secundarioOscuro);
+    background-color: var(--color-secundario);
     padding: 1.2rem;
-    border-radius: 1.5rem;
     color: var(--blanco);
+    transition: all .2s ease;
 }
 
 .boton:hover {
-    background-color: rgb(142, 33, 152);
+    background-color: var(--color-terciario);
 }
 
 

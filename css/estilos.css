@@ -2,12 +2,14 @@
     --blanco: #fff;
     --negro: #000;
     --color-principal: #FF3233;
+    --color-principalOscuro: #b02121;
     --color-secundario: #1f1f1f;
-    --color-boton: #5F464B;
+    --color-header-texto: #c6c7cc;
     --color-terciario: #CEDFD9;
     --color-fondo: #fafafa;
     --color-letra: #626262;
-    --fuentePrincipal: 'Open Sans', sans-serif;
+    --fuentePrincipal: 'Fjalla One', sans-serif;
+    --fuente: 'Open Sans', sans-serif;
     --fuenteSecundaria: 'PT Sans', sans-serif;
 }
 
@@ -118,7 +120,6 @@ img {
         gap: .6rem;
         color: var(--blanco);
         text-transform: uppercase;
-        font-weight: 700;
         font-family: var(--fuentePrincipal);
         margin-right: 2rem;
     }
@@ -236,24 +237,33 @@ img {
     transform-origin: left;
 }
 
-@media (hover:hover) {
-    .icon__cart:hover {
-        transform: scale(1.1);
-    }
-    .navegacion__enlace:hover {
-        transform: scale(1.1);
-    }
-    .icon__bars:hover div:first-child {
-        transform: rotate(45deg);
-        width: 2.4rem;
-    }
-    .icon__bars:hover div:nth-child(2) {
-        opacity: 0;
-    }
-    .icon__bars:hover div:nth-child(3) {
-        transform: rotate(-45deg);
-        width: 2.4rem;
-    }
+.header__texto {
+    line-height: 3rem;
+    text-align: center;
+    padding-top: 7rem;
+}
+
+.header__texto--titulo,
+.header__texto--descripcion {
+    text-transform: uppercase;
+}
+
+.header__texto--titulo {
+    color: var(--blanco);
+    font-size: 7rem;
+    font-weight: 700;
+}
+
+.header__texto--descripcion {
+    color: var(--color-header-texto);
+    font-size: 2rem;
+}
+
+.header__texto--boton {
+    color: var(--blanco);
+    background-color: var(--color-principal);
+    padding: 2rem 4rem;
+    transition: all .2s ease;
 }
 
 
@@ -277,7 +287,6 @@ img {
     text-transform: uppercase;
     font-family: var(--fuentePrincipal);
     font-size: 1.4rem;
-    font-weight: 700;
 }
 
 .footer__up--options {
@@ -360,4 +369,27 @@ img {
     font-size: 3rem;
     padding-left: .5rem;
     padding-right: .5rem;
+}
+
+@media (hover:hover) {
+    .icon__cart:hover {
+        transform: scale(1.1);
+    }
+    .navegacion__enlace:hover {
+        transform: scale(1.1);
+    }
+    .icon__bars:hover div:first-child {
+        transform: rotate(45deg);
+        width: 2.4rem;
+    }
+    .icon__bars:hover div:nth-child(2) {
+        opacity: 0;
+    }
+    .icon__bars:hover div:nth-child(3) {
+        transform: rotate(-45deg);
+        width: 2.4rem;
+    }
+    .header__texto--boton:hover {
+        background-color: var(--color-principalOscuro);
+    }
 }
