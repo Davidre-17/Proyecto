@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/estilos.css">
@@ -19,18 +20,32 @@
     <header class="header">
         <div class="contenedor">
             <div class="barra">
-                <a class="logo" href="index2.html">
-                    <h1 class="logo__nombre no-margin centrar-texto">B<span class="logo__bold">Y</span></h1>
-                </a>
-                <nav class="navegacion">
-                    <a class="header__texto" href="">help</a>
-                    <a class="header__texto" href="">login</a>
-                    <a class="header__texto header__texto--rojo" href="">register</a>
+                <div class="barra__linea__1 ">
+                    <a class="logo" href="index2.html">
+                        <h1 class="logo__nombre no-margin centrar-texto">B<span class="logo__bold">Y</span></h1>
+                    </a>
+                </div>
+                <div class="barra__linea__2">
+                    <label class="header__label" for="buscar"><i class='icon header__icon bx bx-search-alt-2' ></i></label>
+                    <input class="header__input" type="text" placeholder="Buscar ...">
+                </div>
+                <nav class="barra__linea__3 ">
+                    <a class="navegacion__enlace" href="">ayuda <i class='icon header__icon bx bxs-help-circle' ></i></a>
+                    <a class="navegacion__enlace" href="">ingresar <i class='icon header__icon bx bxs-lock-alt' ></i></a>
+                    <a class="navegacion__enlace navegacion__enlace--rojo" href="">registrar <i class='icon header__icon bx bxs-user-plus' ></i></a>
+                    <button class="icon__bars">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </button>
                 </nav>
+                <div class="barra__linea__4 no-margin no-padding">
+                    <i class='bx bxs-cart icon icon__cart'></i>
+                </div>
             </div>
-            <div class="header__texto">
-            </div>
+            <div class="header__texto ">
 
+            </div>
         </div>
 
     </header>
