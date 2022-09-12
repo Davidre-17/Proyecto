@@ -238,9 +238,15 @@ img {
 }
 
 .header__texto {
-    line-height: 3rem;
     text-align: center;
-    padding-top: 7rem;
+    padding-top: 2rem;
+    line-height: 3rem;
+}
+
+@media (min-width: 768px) {
+    .header__texto {
+        padding-top: 7rem;
+    }
 }
 
 .header__texto--titulo,
@@ -252,6 +258,7 @@ img {
     color: var(--blanco);
     font-size: 7rem;
     font-weight: 700;
+    line-height: 7rem;
 }
 
 .header__texto--descripcion {
@@ -270,16 +277,25 @@ img {
 /*footer*/
 
 .footer {
-    height: 30rem;
+    height: 100%;
     background-color: var(--color-secundario);
     margin-top: 5rem;
 }
 
 .footer__up {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    padding-top: 1rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.496);
     padding-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+    .footer {
+        height: 30rem;
+    }
+    .footer__up {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
 .footer__up--tittle {
